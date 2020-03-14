@@ -54,6 +54,32 @@ Test the environment and the classifier function that we will be using to classi
 ``` 
 python test_classifier.py 
 ``` 
+# Batch Processing
+
+Now after completing coding `check_images.py`, we are ready to run it on all 3 models. One way to do this is to call the program from the terminal window for one of the models, wait until it completes running, record it's results, and then repeat for the other two models.
+
+An easier way to handle this task is with **batch processing** using a **shell script**. This is provided in program run_models_batch.sh within the workspace. Here is the code below: 
+``` 
+#  Code from run_models_batch.sh 
+python check_images.py --dir pet_images/ --arch resnet  --dogfile dognames.txt
+     > resnet_pet-images.txt
+python check_images.py --dir pet_images/ --arch alexnet  --dogfile dognames.txt  
+     > alexnet_pet-images.txt
+python check_images.py --dir pet_images/ --arch vgg  --dogfile dognames.txt 
+     > vgg_pet-images.txt
+``` 
+
+You will also notice that each file ends with `> filename.txt`. The `>` is a **pipe** and it pipes the output from the console into a file. The file contains the filename of the model being used. This way after each run, the results are automatically stored in your workspace.
+
+To run file run_models_batch.sh in the workspace, open a terminal window (in Unix/Linux/OSX/Lab Workspace) and type the following:
+``` 
+sh run_models_batch.sh
+``` 
+
+If you want to batch process the program on a Windows computer you will need to follow the instructions found [here](https://github.com/udacity/AIPND/blob/master/notes/lab_intro-to-python-lab.md#running-batch-files-on-windows-os-locally).
+
+The result file are used to compare between the three architect to find which onne is the best.
+
 
 ## Important Notes:
 
