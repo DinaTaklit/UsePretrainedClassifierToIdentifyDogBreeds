@@ -3,9 +3,9 @@
 # */AIPND-revision/intropyproject-classify-pet-images/check_images.py
 #
 # TODO 0: Add your information below for Programmer & Date Created.                                                                             
-# PROGRAMMER: 
-# DATE CREATED:                                  
-# REVISED DATE: 
+# PROGRAMMER: Dina TAKLIT
+# DATE CREATED: 18/12/2019                             
+# REVISED DATE: 14/03/2020
 # PURPOSE: Classifies pet images using a pretrained CNN model, compares these
 #          classifications to the true identity of the pets in the images, and
 #          summarizes how well the CNN performed on the image classification task. 
@@ -20,7 +20,7 @@
 #      python check_images.py --dir <directory with images> --arch <model>
 #             --dogfile <file that contains dognames>
 #   Example call:
-#    python check_images_solution.py --dir pet_images/ --arch vgg --dogfile dognames.txt
+#    python check_images.py --dir pet_images/ --arch vgg --dogfile dognames.txt
 ##
 
 # Imports python modules
