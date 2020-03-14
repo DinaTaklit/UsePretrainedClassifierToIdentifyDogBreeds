@@ -89,7 +89,9 @@ For this image classification task you will be using an image classification app
 
 Remember that certain breeds of dog look very similar. The more images of two similar looking dog breeds that the algorithm has learned from, the more likely the algorithm will be able to distinguish between those two breeds. We have found the following breeds to look very similar: [Great Pyrenees] and [Kuvasz], [German Shepherd] and [Malinois], [Beagle] and [Walker Hound], amongst others.
 
+## Credits
 
+All credits go for AI programing with python nanodegree program offered by Udacity.
 
 
 [ImageNet]:<http://www.image-net.org/>
