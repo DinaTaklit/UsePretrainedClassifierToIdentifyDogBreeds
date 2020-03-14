@@ -35,6 +35,21 @@ You need to use an already developed Python classifier to make sure the particip
     - Use Labels and their classifications to determine how well the algorithm worked on classifying images
 - Print the Results
 
+## Running a Program using command line arguments
+
+- To run a program like `check_images.py` with defualt argument use:
+    ``` 
+    python check_images.py 
+    ``` 
+- To run a program like `check_images.py` using the command line argument `--dir`, first open a terminal window within the Project Workspace. Next type the following and hit enter to run the program (this example - `check_images.py`). Notice that all command line arguments are specified after the program name (this example - `check_images.py`) and they are indicated by the `--` that proceeds their variable name (this example : `dir`) with the value following the variable name (in this example the string : pet_images/).
+    ``` 
+    python check_images.py --dir pet_images/
+    ``` 
+- Another example of call
+    ``` 
+    python check_images.py --dir pet_images/ --arch vgg --dogfile dognames.txt
+    ``` 
+    
 ## Important Notes:
 
 For this image classification task you will be using an image classification application using a deep learning model called a convolutional neural network (CNN). CNNs work particularly well for detecting features in images like colors, textures, and edges; then using these features to identify objects in the images. You'll use a CNN that has already learned the features from a giant dataset of 1.2 million images called [ImageNet]. There are different types of CNNs that have different structures (architectures) that work better or worse depending on your criteria. With this project you'll explore the three different architectures (**AlexNet**, **VGG**, and **ResNet**) and determine which is best for your application.
